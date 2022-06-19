@@ -58,7 +58,7 @@ else:
 download_url = 'https://github.com/tryton-ar/bank_ar/tree/%s' % branch
 
 LINKS = {
-    'trytonar_party_ar': ('git+https://github.com/tryton-ar/'
+    'trytonar_party_ar': ('git+https://github.com/rollyar/'
         'party_ar.git@%s#egg=trytonar_party_ar-%s' %
         (branch, series)),
     }
@@ -81,13 +81,13 @@ setup(name='%s_%s' % (PREFIX, MODULE),
     description='Tryton module for banks of Argentina',
     long_description=read('README.rst'),
     author='tryton-ar',
-    url='https://github.com/tryton-ar/bank_ar',
+    url='https://github.com/rollyar/bank_ar',
     download_url=download_url,
     project_urls={
         "Bug Tracker": 'https://bugs.tryton.org/',
         "Documentation": 'https://docs.tryton.org/',
         "Forum": 'https://www.tryton.org/forum',
-        "Source Code": 'https://github.com/tryton-ar/bank_ar',
+        "Source Code": 'https://github.com/rollyar/bank_ar',
         },
     package_dir={'trytond.modules.%s' % MODULE: '.'},
     packages=[
